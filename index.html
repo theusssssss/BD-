@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banco de Dados</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="menu">
+            <h1>BANCO DE DADOS</h1>
+        </div>
+        <br> <br> <br> <br> <br>
+        <div class="titulo">
+            <h1>
+                Banco de Dados: o que é, principais tipos e um guia para <br>
+                iniciar <br>
+
+            </h1>
+            <img src="banner.jpg" alt>
+
+        </div>
+        <br>
+
+        <div class="text1">
+            Se você já teve curiosidade sobre o universo dos <strong>banco de
+                dados</strong> e se você tem <br>dúvidas sobre de que forma o
+            uso de dados pode contribuir para a gestão <br>eficiente das suas
+            informações, este artigo é essencial para você :) <br> <br>
+
+            Ao explorarmos a essência dos dados, compreendemos que trata-se de
+            <br>representações simbólicas ou fatos que os sistemas de
+            informações podem <br>coletar, armazenar e processar. <br> <br>
+
+            Por isso, essas dúvidas podem atingir tanto as empresas — <i>por
+                exemplo, <br> quando dependem de dados para tomar decisões
+                estratégicas e manter o <br>registro de histórico de compra de
+                clientes</i> — quanto as pessoas em suas vidas pessoais. <br>
+            <br>
+
+            Mesmo assim, é natural que questões específicas surjam. Afinal, os
+            dados <br> podem assumir várias formas, incluindo texto, números,
+            imagens, áudio e muito <br>mais. <br> <br>
+
+            Neste artigo, vamos explorar desde os <strong>fundamentos dos bancos
+                de dados, <br>como os conceitos essenciais de estruturação,
+                armazenamento e <br>recuperação de dados, </strong>até aspectos
+            que podem te fornecer insights valiosos <br>sobre <strong>a
+                relevância e benefícios práticos </strong>dos bancos de dados na
+            organização. <br><br>
+
+            Tudo isso, através de tópicos levantados pelo <strong>Desenvolvedor
+                Matheus Vinicius.</strong> <br> <br>
+
+            Ao longo dessa jornada, você terá a possibilidade de reconhecer como
+            os dados <br>são um ativo valioso para empresas e organizações, pois
+            podem ser usados <br>para tomar decisões informadas, identificar
+            tendências, automatizar processos e <br> melhorar a eficiência
+            operacional. <br><br>
+
+            Desse modo, compreendendo que os dados podem ser estruturados
+            <br>(organizados em formatos específicos, como tabelas de banco de
+            dados), semi <br> estruturados (possuem alguma estrutura, mas não
+            são rigidamente organizados) <br>ou não estruturados (não têm
+            formato definido, como texto livre). <br><br>
+
+            A utilização de um banco de dados é de extrema importância em
+            diversos <br>contextos, já que se relaciona à capacidade de
+            organizar, proteger, acessar e <br>utilizar os dados de forma
+            eficaz. <br><br>
+
+            Isso é fundamental para o sucesso de organizações, sistemas de
+            informação e <br> aplicações em um mundo cada vez mais orientado por
+            dados. Então, vamos lá? <br><br>
+        </div>
+        <div class="titulo">
+            <h1>
+                O que é banco de dados?
+
+            </h1>
+            <img src="/BD/foto2.webp" alt height="400">
+
+        </div>
+        <br>
+        <div class="oq">
+            Um banco de dados <strong>é um sistema de armazenamento de informações</strong> <br>
+            que permite a coleta, o armazenamento, a recuperação e a manipulação
+            <br>
+            de dados de maneira estruturada e eficiente. <br>
+            <br>
+            Conforme ilustrado na imagem, trata-se de uma rede integrada de
+            dados <br>
+            que serve para gerenciar e acessar informações de forma confiável.
+            <br>
+            <br>
+            O que é essencial para muitas aplicações, desde empresas que
+            gerenciam <br>
+            informações de clientes até aplicações científicas e governamentais
+            que <br>
+            lidam com grandes volumes de dados. <br>
+            <br>
+            Nos dias atuais, existem vários tipos de banco de dados, incluindo
+            <br>
+            relacionais, NoSQL e outros, cada um com suas próprias
+            características <br>
+            e usos específicos. <br>
+            <br>
+            Independentemente do tipo, <strong>os bancos de dados desempenham um papel
+            <br>
+            fundamental na tomada de decisões e no suporte a operações críticas
+            <br>
+            em organizações e sistemas de informação.</strong> <br>
+        </div>
+        <br>
+        <div class="titulo">
+            <h1>
+                O que é SGBD
+
+            </h1>
+
+        </div>
+        <br>
+        <div class="oq">
+            <i>Data Base Management System </i>ou Sistema de Gerenciamento de Banco de
+            Dados <br>
+            (SGBD) é um conjunto de software utilizado para o gerenciamento de
+            uma base <br>
+            de dados, <strong>responsáveis por controlar, acessar, organizar e proteger
+            as informações <br>
+            de uma aplicação</strong>, tendo como principal objetivo gerenciar as bases
+            de dados <br>
+            utilizadas por aplicações clientes e remover esta responsabilidade
+            das mesmas. <br>
+        </div>
+        <br>
+        <div class="titulo">
+            <h1>
+                Tipos de SGBD
+
+            </h1>
+            <br>
+        </div>
+        <div class="oq">
+            <ul>
+                Definindo como os dados serão armazenados no banco de dados,
+                podemos destacar <br>
+                os modelos de SDBDs mais utilizados como os seguintes:
+                Relacionais, não-relacionais <br>
+                (NoSQL), hierárquico, de rede e o orientado a objetos. <br>
+                <br>
+                Relacionais - Os SGBDS relacionais são banco de dados que
+                modelam os dados no <br>
+                formato de tabelas, que podem se relacionar entre si. Cada
+                tabela pode possuir <br>
+                diversos atributos, com diversos tipos de dados <br>
+                <br>
+                Não-relacionais (NoSQL) - NoSQL (Not Only SQL) é o termo
+                utilizado para banco de <br>
+                dados não relacionais de alto desempenho, onde geralmente não é
+                utilizado o SQL <br>
+                como linguagem de consulta. Estes bancos utilizam diversos
+                modelos de dados,<br>
+                incluindo documentos, gráficos, chave-valor e colunares. São
+                amplamente reconhecidos <br>
+                pela facilidade em seu desenvolvimento, desempenho escalável,
+                alta disponibilidade <br>
+                e resiliência. <br>
+                <br>
+
+                Hierárquico - Modelo hierárquico de banco de dados consiste em
+                uma coleção de arquivos <br>
+                que são conectados entre si por meio deligações, baseando a sua
+                base de dados em um modelo <br>
+                de entidades e relacionamentos. <br>
+                <br>
+                De rede - Possuindo uma organização semelhante ao modelo de
+                banco de dados hierárquico, o <br>
+                modelo de rede possui uma estrutura mais completa, possuindo
+                como principal diferença entre <br>
+                eles o fato de não existir restrição hierárquica. É um modelo
+                que permite a organização dos <br>
+                dados em uma estrutura formada por várias listas, formada por um
+                conjunto complexo de ligações. <br>
+                <br>
+                Orientado a objetos - Baseado no paradigma da programação
+                orientada a objetos, neste modelo as <br>
+                funcionalidades de orientação a objetos são integradas aos
+                bancos de dados, onde cada informação <br>
+                é armazenada em forma de um objeto e seus registros em forma de
+                tuplas. <br> <br>
+            </ul>
+        </div>
+        <br>
+        <div class="titulo">
+            <h1>
+                Diferença entre Dados e Informação
+
+            </h1>
+            <img src="/BD/dadosxinformação.jpg" alt height="400">
+        </div>
+        <div class="oq">
+            Dados não são específicos, ao contrário da informação, que é um
+            significado <br>
+            detalhado a partir do trabalho com elementos maisbrutos. As
+            informações, em <br>
+            outras palavras, são dados trabalhados para agregar valor ao
+            negócio. <br><br>
+        </div>
+        <br>
+        <div class="titulo">
+            <h1>
+                O que é Modelo de Dados
+
+            </h1>
+            <img src="/BD/modelodedados.jpeg" alt height="400">
+        </div>
+        <div class="oq">
+            Modelos de dados são representações visuais dos elementos de dados
+            de uma <br>
+            empresa e as conexões entre eles. Ao ajudar a definir e estruturar
+            dados no <br>
+            contexto de processos empresariais relevantes, os modelos apoiam o
+            desenvolvimento <br>
+            de sistemas de informação eficazes. Eles permitem que os recursos
+            empresariais e <br>
+            técnicos decidam colaborativamente como os dados serão armazenados,
+            acessados, <br>
+            compartilhados, atualizados e alavancados em uma organização.
+            <br><br>
+
+        </div>
+        <br>
+        <div class="titulo">
+            <h1>
+                Tipos de Modelo de Dados
+
+            </h1>
+        </div>
+        <div class="oq">
+            <br>
+            <h3>Modelos conceituais de dados</h1> <br>
+            Também conhecidos como modelos de domínio, os modelos conceituais de
+            dados exploram <br>
+            e detalham suas estruturas e conceitos de negócios estáticos de alto
+            nível. Eles são <br>
+            mais frequentemente usados durante o início de um novo projeto,
+            quando conceitos de <br>
+            alto nível e requisitos iniciais são discutidos. Muitas vezes, eles
+            são criados como <br>
+            precursores ou alternativas para a próxima etapa: modelos lógicos de
+            dados. <br> <br>
+
+            <img src="/BD/conceptual-data-model-1.jpg" alt height="300">
+        </div>
+        <div class="oq">
+            <br>
+            <h3>Modelos lógicos de dados</h3> <br>
+            Após o domínio do problema e os conceitos iniciais se tornarem mais
+            claros através da <br>
+            modelagem conceitual de dados, é hora de ser mais específico com um
+            modelo lógico de dados. <br>
+            Se você está olhando através da lente de um único projeto ou de toda
+            a sua empresa, esses <br>
+            modelos esclarecem as várias entidades lógicas (tipos ou classes de
+            dados) com as quais você <br>
+            estará trabalhando, os atributos de dados que definem essas
+            entidades e as relações entre elas. <br><br>
+            <br>
+            <img src="/BD/erwin-logical-data-modeling.jpg" alt height="300">
+        </div>
+        <div class="oq">
+            <br>
+            <h3>Modelos físicos de dados</h3> <br>
+            Quando você chega ao estágio de modelagem física de dados, é
+            realmente hora de chegar ao <br>
+            essencial. Esses modelos são usados para projetar o esquema interno
+            de um banco de dados. <br>
+            Isso inclui todas as várias tabelas, as colunas nessas tabelas e as
+            relações entre elas. <br>
+            Esses modelos serão traduzidos diretamente no design do banco de
+            dados de produção, que <br>
+            apoiará o desenvolvimento de sistemas de informação. Modelos físicos
+            de dados geralmente <br>
+            são usados para projetar três tipos de bancos de dados: relacional
+            para bancos de dados <br>
+            operacionais tradicionais, documento para bancos de dados NoSQL e
+            JSON e dimensional para <br>
+            armazenamento de dados de agregação e business intelligence, como
+            data warehouses e data marts. <br><br>
+
+            <img src="/BD/erwin-physical-data-modeling.jpg" alt height="300">
+        </div>
+        <div class="oq">
+            <br>
+            <h1>O que é SQL</h1> <br>
+            A Linguagem de consulta estruturada (SQL) é uma linguagem de
+            programação para armazenar e <br>
+            processar informações em um banco de dados relacional. Um banco de
+            dados relacional armazena <br>
+            informações em formato tabular, com linhas e colunas representando
+            diferentes atributos de dados <br>
+            e as várias relações entre os valores dos dados. Você pode usar
+            instruções SQL para armazenar, <br>
+            atualizar, remover, pesquisar e recuperar informações do banco de
+            dados. Também pode usar SQL <br>
+            para manter e otimizar a performance do banco de dados. <br><br>
+            <br><img src="/BD/sql.jpg" alt height="300">
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>O que é tabelas em Banco de Dados</h1></div> <br>
+        <div class="oq">
+            Tabelas são objetos de banco de dados que contêm todos os dados em
+            um banco de dados. Nas tabelas,<br>
+            os dados são organizados de maneira lógica em um formato de
+            linha-e-coluna semelhante ao de uma <br>
+            planilha. Cada linha representa um registro exclusivo e cada coluna
+            representa um campo no registro. <br>
+            <br><img src="/BD/tabela.jpg" alt height="300">
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>O que é campo em Banco de Dados</h1></div> <br>
+        <div class="oq">
+            Um campo é uma unidade de entrada de dados básica em um registro.
+            Para definir um novo campo, você <br>
+            deve nomeá-lo. Em seguida, você deve selecionar as opções que
+            determinem como o campo interpreta, <br>
+            insere, calcula, armazena e exibe dados. <br> <br>
+            <br><img src="/BD/campo.png" alt height="300">
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>O que é campo em Banco de Dados</h1></div> <br>
+        <div class="oq">
+            Um campo é uma unidade de entrada de dados básica em um registro.
+            Para definir um novo campo, você <br>
+            deve nomeá-lo. Em seguida, você deve selecionar as opções que
+            determinem como o campo interpreta, <br>
+            insere, calcula, armazena e exibe dados. <br> <br>
+            <br><img src="/BD/campo.png" alt height="300">
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>O que é Chave Primária em Banco de Dados</h1></div> <br>
+        <div class="oq">
+            Para que uma tabela se qualifique como uma tabela relacional, ela
+            deve ter uma chave primária. A chave <br>
+            primária consiste em uma ou mais colunas cujos dados contidos são
+            usados para identificar exclusivamente <br>
+            cada linha na tabela. Você pode pensar neles como um endereço. Se as
+            linhas de uma tabela fossem caixas de <br>
+            correio, a chave primária seria a listagem de endereços de rua. Para
+            ser uma chave primária, várias condições <br>
+            devem ser verdadeiras: As colunas que definem a chave primária são
+            exclusivas. Cada coluna pode conter valores <br>
+            duplicados; no entanto, a combinação de valores de coluna é
+            exclusiva. <br>
+            <br>
+            Nenhum valor nas colunas de chave primária é NULL. Eu também
+            estenderia isso para incluir valores “em branco”. <br>
+            Ao definir uma tabela, você especifica a chave primária. Uma tabela
+            possui apenas uma chave primária e sua <br>
+            definição é obrigatória. As chaves primárias são armazenadas em um
+            índice. O índice mantém o requisito de <br>
+            exclusividade da chave primária. Também torna mais fácil para os
+            valores de chave estrangeira se referirem <br>
+            aos valores de chave primária correspondentes, como aprenderemos na
+            seção a seguir. <br><br>
+            <br><img src="/BD/pk.jpg" alt height="300">
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>O que é Chave Estrangeira em Banco de Dados</h1></div> <br>
+        <div class="oq">
+            Chave estrangeira, ou Foreign Key (FK), ou ainda chave externa é a
+            chave que permite a referência a registros <br>
+            oriundos de outras tabelas. Ou seja, é o campo ou conjunto de campos
+            que compõem a chave primária de uma outra <br>
+            tabela. <br><br>
+
+            A utilização da chave estrangeira possibilita a implementação da
+            integridade de dados diretamente no banco de <br>
+            dados, conhecida como integridade referencial <br> <br>
+
+            Uma chave estrangeira é a representação de um relacionamento entre
+            tabelas. <br>
+            <br><img src="/BD/fk.webp" alt height="300">
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>O que é Normalização de Banco de Dados</h1></div> <br>
+        <div class="oq">
+            Normalização é o processo de organização de dados em um banco de
+            dados. Isso inclui a criação de tabelas e o estabelecimento de
+            relações entre essas tabelas de acordo com as regras projetadas para
+            proteger os dados e tornar o banco de dados mais flexível,
+            eliminando a redundância e a dependência inconsistente.
+            <br><img src="/BD/normalização.webp" alt height="300">
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>As diferentes normas formais em um Banco de Dados</h1></div>
+        <br>
+        <div class="oq">
+            Primeira Forma Normal (1FN):
+
+            A primeira forma normal visa eliminar atributos multivalorados e
+            atributos compostos.
+
+            Segunda Forma Normal (2FN):
+
+            Uma tabela encontra-se na segunda forma normal se ela atende todos
+            os requisitos da primeira forma normal e se os registros na tabela,
+            que não são chaves, dependam da chave primária em sua totalidade e
+            não apenas parte dela.
+
+            Aqui, vamos eliminar a dependência funcional parcial.
+
+            Terceira Forma Normal (3FN):
+
+            Se uma tabela está na primeira e segunda forma normal, mas ao
+            analisarmos um registro encontramos um atributo não chave dependente
+            de outro atributo não chave, precisaremos corrigir a tabela para a
+            terceira forma normal.
+
+            Aqui basicamente corrigiremos a dependência funcional transitiva.
+            <br>
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>O que é Banco de Dados Relacional</h1></div>
+        <br>
+        <div class="oq">
+            Um banco de dados relacional é um tipo de banco de dados que
+            armazena e fornece acesso a pontos de dados relacionados entre si.
+            Bancos de dados relacionais são baseados no modelo relacional, uma
+            maneira intuitiva e direta de representar dados em tabelas. Em um
+            banco de dados relacional, cada linha na tabela é um registro com
+            uma ID exclusiva chamada chave. As colunas da tabela contêm
+            atributos dos dados e cada registro geralmente tem um valor para
+            cada atributo, facilitando o estabelecimento das relações entre os
+            pontos de dados.
+            <br>
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>O que é Banco de Dados Não Relacional</h1></div>
+        <br>
+        <div class="oq">
+            O banco de dados não relacional é um banco de dados que possibilita
+            a flexibilidade na hora de armazenar os dados, já que não se limita
+            a tabelas com linhas e colunas, como o banco de dados relacional.
+            Esse tipo de banco de dados usa um modelo de armazenamento
+            otimizado, que é adaptável para o requisito específico de cada dado,
+            por exemplo: possibilita que os dados sejam armazenados como
+            chave/valor simples; documento no formato JSON (JavaScript Object
+            Notation) ou até mesmo em forma de gráfico, composto de bordas e
+            vértices.
+            <br>
+        </div>
+        <div class="titulo">
+            <br>
+            <h1>O que é Banco de Dados Distribuido</h1></div>
+        <br>
+        <div class="oq">
+            Um banco de dados distribuído é um sistema de gerenciamento de banco
+            de dados no qual os bancos de dados não estão localizados em um
+            sistema de servidor comum. Os bancos de dados podem ser armazenados
+            em vários servidores de dados localizados no mesmo local físico, ou
+            podem ser distribuídos por uma rede local ou ampla.
+            <br>
+        </div>
+        <div class="titulo">
+            <h1>
+                BANCO DE DADOS
+
+            </h1>
+        </div>
+        <div class="oq">
+            <br>
+            <h3>Vantagens</h3> <br>
+            As empresas que utilizam bancos de dados têm como benefícios:
+
+            Acessibilidade;
+            Segurança de dados;
+            Análises e comparativos;
+            Assertividade na tomada de decisões;
+            Melhor relacionamento interno;
+            Aumento da produtividade.
+
+            <h3>Desvantagens</h3> <br>
+            a escalabilidade é um ponto fraco dos Bancos de Dados Relacionais. À
+            medida que os dados aumentam, pode ser necessário investir em
+            hardware caro para manter o desempenho. Isso pode ser um desafio em
+            aplicativos de grande escala, onde a escalabilidade horizontal é
+            preferível.
+
+            <img src="/BD/conceptual-data-model-1.jpg" alt height="300">
+        </div>
+
+    </body>
+</html>
